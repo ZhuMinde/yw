@@ -1,0 +1,102 @@
+<html lang="en"><head>
+		<meta charset="UTF-8">
+		<title>www.moonwang.xyz</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="keywords" content="api接口,引导页,月望工作室">
+		<meta name="description" content="月望工作室专注为客户提供安全、稳定、先进的产品，致力于互联网资源整合。我们重视客户的体验及需求，坚持不断创新，落实客户需求、实现用户所想，这也是大部分用户选择我们的原因">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="shortcut icon" href="./favicon.ico" type="images/x-icon">
+	</head>
+	<body>
+		<div class="centerBox">
+			<div class="header"></div>
+			<div class="center-list">
+				<div class="centerBody">
+					<img src="./img/ds.png">
+					<p class="btn-p">
+						<a href="https://zhuminde.github.io/moonwang/" target="_blank" title=""">官网</a>
+						<a href="https://zhuminde.gitee.io/chahua/" target="_blank" title=""">插画库</a>
+						<a href="https://zhuminde.github.io/webpage/" target="_blank" title=""">代码库</a>	
+					</p>
+					<p class="btn-p">
+						<a href="https://zhuminde.gitee.io/heart/" target="_blank" title=""">代码爱心</a>
+						<a href="https://zhuminde.github.io/ZhuMinde/" target="_blank" title=""">太空导航</a>
+						<a href="https://zhuminde.github.io/zhumindeu/" target="_blank" title=""">特殊导航</a>	
+					</p>
+					<p class="txt-w"><font style="color: #ffffff;font-size:12px;letter-spacing: 11px;font-weight: 100;padding-left:  20px;">一是革新&nbsp;&nbsp;一是复古</font></p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="center-footer">
+					<p class="banquan">MyMoonWang © moonwang.xyz 月望工作室</p>
+				</div>
+			</div>
+		</div>
+	
+	<script src="./js/simplex-noise.min.js"></script>
+	<script src="./js/index.js"></script>
+<canvas width="1298" height="953" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></canvas>
+<!-- 背景音乐代码 -->
+<audio autoplay="autoplay" loop></audio>
+<audio id="chat-message-audio">
+  <source id="chat-message-audio-source" src="mp3/video.mp3" type="audio/mpeg" />
+</audio>
+<script type="application/javascript">    function a() {
+        var e = document.getElementById("chat-message-audio-source").src
+            , b = document.getElementById("chat-message-audio");
+        b.src = "";
+                    b.autoplay='autoplay';
+            var p = b.play();
+            p && p.then(function(){}).catch(function(e){});
+            b.src = e;
+            jQuery(document).unbind("click", a);
+            b.play();
+        }
+        a();
+        jQuery(document).on("click", a);
+</script>
+<!-- 禁止12代码 -->
+<script>function fuckyou(){
+ window.close(); //关闭当前窗口(防抽)
+ window.location="about:blank"; //将当前窗口跳转置空白页
+}
+ function ck() {
+ console.profile();
+ console.profileEnd();
+ //我们判断一下profiles里面有没有东西，如果有，肯定有人按F12了，没错！！
+ if(console.clear) { console.clear() };
+ if (typeof console.profiles =="object"){
+ return console.profiles.length > 0;
+ }
+}
+function hehe(){
+if( (window.console && (console.firebug || console.table && /firebug/i.test(console.table()) )) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)){
+ fuckyou();
+}
+if(typeof console.profiles =="object"&&console.profiles.length > 0){
+fuckyou();
+}
+}
+hehe();
+window.onresize = function(){
+if((window.outerHeight-window.innerHeight)>200)
+//判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
+ fuckyou();
+}</script>	
+
+<script>
+     document.oncontextmenu = function () { 
+         alert('浏览器提示：该网站html和js都已加密！');
+         return false; 
+         };
+        document.onkeydown = function () {
+            if (window.event && window.event.keyCode == 123) {
+                event.keyCode = 0;
+                event.returnValue = false;
+                alert('浏览器提示：该网站html和js都已加密！');
+                return false;
+            }
+        };
+    </script>
+</body>
+</html>
